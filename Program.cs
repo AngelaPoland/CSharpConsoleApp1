@@ -10,16 +10,10 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            string someText = "Here is some text";
-            int number = 10;
-            double anotherNumber = 10.9;
-            bool isOrdered = true;
-            string input = Console.ReadLine();
-            var anything = 10.9;
-
-            Console.WriteLine(someText);
-            Console.WriteLine(number);
-            Console.WriteLine(anotherNumber);
+            Person person1 = new Person();
+            Console.WriteLine(person1.getAge());
+            person1.setAge(29);
+            Console.WriteLine(person1.getAge());
         }
     }
 }
